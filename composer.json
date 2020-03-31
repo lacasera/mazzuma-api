@@ -1,0 +1,43 @@
+{
+    "name": "lacasera/mazzuma-api",
+    "description": "This is the package for the Mazzuma Mobile Api",
+    "keywords": [
+        "lacasera",
+        "mazzuma-api"
+    ],
+    "homepage": "https://github.com/lacasera/mazzuma-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Agyenim Boateng Barfi",
+            "email": "hi@barfiagyenim.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lacasera\\MazzumaApi\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lacasera\\MazzumaApi\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
